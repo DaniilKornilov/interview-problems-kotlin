@@ -9,11 +9,11 @@ fun isAnagram(s: String, t: String): Boolean {
     return getCharToCountMap(s) == getCharToCountMap(t)
 }
 
-private fun getCharToCountMap(s: String): Map<Char, Int> {
-    val map = mutableMapOf<Char, Int>()
-    for (char in s) {
-        val count = map[char] ?: 0
-        map[char] = count + 1
+private fun getCharToCountMap(string: String): Map<Char, Int> {
+    val charToCount = mutableMapOf<Char, Int>()
+    for (char in string) {
+        val count = charToCount[char] ?: 0
+        charToCount[char] = count + 1
     }
-    return map
+    return charToCount
 }
