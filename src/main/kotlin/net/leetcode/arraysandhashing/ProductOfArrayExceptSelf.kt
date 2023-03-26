@@ -10,9 +10,9 @@ fun productExceptSelf(nums: IntArray): IntArray {
         prefix *= num
     }
     var postfix = 1
-    for (i in nums.indices.reversed()) {
+    for ((i, num) in nums.withIndex().reversed()) {
         result[i] *= postfix
-        postfix *= nums[i]
+        postfix *= num
     }
 
     return result
