@@ -19,7 +19,7 @@ class ValidAnagramTest {
     fun testIsAnagram(): Stream<Arguments> {
         return Stream.of(
             Arguments.of("anagram", "nagaram", true),
-            Arguments.of("rat", "car", false)
+            Arguments.of("rat", "car", false),
         )
     }
 

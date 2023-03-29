@@ -1,4 +1,4 @@
-package net.leetcode.arraysandhashing
+package net.leetcode.twopointers
 
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.TestInstance
@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.MethodSource
 import java.util.stream.Stream
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class TwoSumTest {
+class TwoSumIITest {
 
     @ParameterizedTest
     @MethodSource
@@ -18,9 +18,9 @@ class TwoSumTest {
 
     fun testTwoSum(): Stream<Arguments> {
         return Stream.of(
-            Arguments.of(intArrayOf(2, 7, 11, 15), 9, intArrayOf(0, 1)),
-            Arguments.of(intArrayOf(3, 2, 4), 6, intArrayOf(1, 2)),
-            Arguments.of(intArrayOf(3, 3), 6, intArrayOf(0, 1)),
+            Arguments.of(intArrayOf(2, 7, 11, 15), 9, intArrayOf(1, 2)),
+            Arguments.of(intArrayOf(2, 3, 4), 6, intArrayOf(1, 3)),
+            Arguments.of(intArrayOf(-1, 0), -1, intArrayOf(1, 2)),
         )
     }
 
