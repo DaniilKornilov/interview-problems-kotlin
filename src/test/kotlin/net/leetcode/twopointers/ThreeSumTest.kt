@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.MethodSource
 import java.util.stream.Stream
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class ThreeSum {
+class ThreeSumTest {
 
     @ParameterizedTest
     @MethodSource
