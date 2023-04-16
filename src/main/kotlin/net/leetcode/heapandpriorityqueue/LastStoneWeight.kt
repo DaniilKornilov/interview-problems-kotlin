@@ -1,6 +1,6 @@
 package net.leetcode.heapandpriorityqueue
 
-import java.util.*
+import java.util.PriorityQueue
 
 //https://leetcode.com/problems/last-stone-weight/
 
