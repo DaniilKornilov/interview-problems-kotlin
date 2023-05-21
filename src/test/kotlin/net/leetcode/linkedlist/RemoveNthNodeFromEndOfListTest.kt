@@ -23,7 +23,7 @@ class RemoveNthNodeFromEndOfListTest {
     }
 
     @Test
-    fun testReverseLinkedList() {
+    fun testRemoveNthFromEnd() {
         val deletedNthHead = removeNthFromEnd(head, 2)
         Assertions.assertEquals("1 -> 2 -> 3 -> 5", deletedNthHead.toString())
     }

@@ -4,28 +4,27 @@ import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
-class ReorderListTest {
+class LinkedListCycleTest {
 
     private lateinit var head: ListNode
 
     @BeforeEach
     fun setUp() {
-        head = ListNode(1)
+        head = ListNode(3)
         val node1 = ListNode(2)
-        val node2 = ListNode(3)
-        val node3 = ListNode(4)
-        val node4 = ListNode(5)
+        val node2 = ListNode(0)
+        val node3 = ListNode(-4)
 
         head.next = node1
         node1.next = node2
         node2.next = node3
-        node3.next = node4
+        node3.next = node1
     }
 
     @Test
-    fun testReorderList() {
-        reorderList(head)
-        Assertions.assertEquals("1 -> 5 -> 2 -> 4 -> 3", head.toString())
+    fun testHasCycle() {
+        val maxTwinSum = hasCycle(head)
+        Assertions.assertEquals(true, maxTwinSum)
     }
 
 }

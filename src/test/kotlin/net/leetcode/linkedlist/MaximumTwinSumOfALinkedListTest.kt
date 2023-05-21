@@ -21,7 +21,7 @@ class MaximumTwinSumOfALinkedListTest {
     }
 
     @Test
-    fun testReverseLinkedList() {
+    fun testPairSum() {
         val maxTwinSum = pairSum(head)
         Assertions.assertEquals(6, maxTwinSum)
     }

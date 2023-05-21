@@ -28,7 +28,7 @@ class MergeTwoSortedListsTest {
     }
 
     @Test
-    fun testReverseLinkedList() {
+    fun testMergeTwoLists() {
         val mergedListsHead = mergeTwoLists(head1, head2)
         Assertions.assertEquals("1 -> 1 -> 2 -> 3 -> 4 -> 4", mergedListsHead.toString())
     }
