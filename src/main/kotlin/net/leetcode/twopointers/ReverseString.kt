@@ -12,9 +12,3 @@ fun reverseString(s: CharArray) {
         right--
     }
 }
-
-fun main() {
-    val charArray = charArrayOf('a', 'b', 'c', 'a', 'd')
-    reverseString(charArray)
-    println(charArray)
-}
