@@ -8,20 +8,19 @@ import org.junit.jupiter.params.provider.MethodSource
 import java.util.stream.Stream
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class MaximumProductSubarrayTest {
+class HouseRobber2Test {
 
     @ParameterizedTest
     @MethodSource
-    fun testMaxProduct(nums: IntArray, expected: Int) {
-        Assertions.assertEquals(expected, maxProduct(nums))
+    fun testRob2(nums: IntArray, expected: Int) {
+        Assertions.assertEquals(expected, rob2(nums))
     }
 
-    fun testMaxProduct(): Stream<Arguments> {
+    fun testRob2(): Stream<Arguments> {
         return Stream.of(
-            Arguments.of(intArrayOf(2, 3, -2, 4), 6),
-            Arguments.of(intArrayOf(-2, 0, -1), 0),
-            Arguments.of(intArrayOf(0, 2), 2),
-            Arguments.of(intArrayOf(-2, 3, -4), 24),
+            Arguments.of(intArrayOf(2, 3, 2), 3),
+            Arguments.of(intArrayOf(1, 2, 3, 1), 4),
+            Arguments.of(intArrayOf(1, 2, 3), 3),
         )
     }
 
