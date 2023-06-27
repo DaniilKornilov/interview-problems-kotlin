@@ -20,7 +20,3 @@ fun permute(nums: IntArray): List<List<Int>> {
     backtrack(mutableListOf())
     return result
 }
-
-fun main() {
-    permute(intArrayOf(1, 2, 3))
-}
